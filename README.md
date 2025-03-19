@@ -30,11 +30,16 @@
     ```sh
     cp .env.example .env
     ```
+    ```sh
+    nano docker-composer.yml
+    ```
 ## Запуск
 
 1. Запустите локальный сервер:
     ```sh
     sail up
+    sail artisan key:generate
+    sail artisan migrate
     ```
 
 ## Лицензия
